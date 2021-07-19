@@ -1,0 +1,41 @@
+.headerMainMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1340px;
+}
+.mobileContainer {
+    display: none;
+    height: 60px;
+    background: linear-gradient(to left, #e52d27, #b31217);
+}
+.menuList {
+    display: flex;
+}
+.menuList li a {
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: .2s;
+    opacity: .8;
+    display: block;
+    padding: 30px 20px;
+}
+.menuList li a:hover {
+    text-decoration: none;
+    text-shadow: 1px 0 3px #fff;
+    opacity: 1;
+}
+.active a {
+    text-shadow: 0 0 5px #fff!important;
+    opacity: 1!important;
+}
+@media (max-width: 600px) {
+    .mobileContainer {
+        display: block;
+    }
+    .headerMainMenu {
+        display: none;
+    }
+}
